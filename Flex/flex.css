@@ -1,0 +1,120 @@
+.main{
+    width: 900px;
+    height: 500px;
+    background-color: aqua;
+    
+}
+.nav{
+    background-color: rgb(100, 100, 209);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn1:hover{
+    background-color: rgb(6, 240, 45);
+    color: rgb(1, 8, 14);
+    border-radius: 15px;
+    padding: 5px;
+}
+.btn2:hover{
+    background-color: blueviolet;
+    columns: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+.btn3:hover{
+    background-color: rgb(76, 0, 148);
+    columns: #0a0a0a;
+    border-radius: 15px;
+    padding: 5px;
+}
+.btn4:hover{
+    background-color: rgb(65, 212, 223);
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn5:hover{
+    background-color: rgb(31, 93, 97);
+    columns: #030000;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn6:hover{
+    background-color: rgb(231, 223, 238);
+    columns: #0509e9;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn7:hover{
+    background-color: rgb(74, 228, 13);
+    columns: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.table{
+    width: 900px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+.item1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(224, 68, 68);
+    border: 5px solid black;
+    border-radius: 20px;
+
+}
+.item2{
+    width: 200px;
+    height: 200px;
+    background-color:  rgb(224, 68, 68);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.item3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(224, 68, 68);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.item4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(224, 68, 68);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.item5{
+    width: 200px;
+    height: 200px;
+    background-color:  rgb(224, 68, 68);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.item6{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(224, 68, 68);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.table img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.n{
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}

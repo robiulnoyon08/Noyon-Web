@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: Poppins;
+        cursor: url(./img/curasol.png), auto;
+        transition: all;
+    }
+
+    .img {
+        width: 40px;
+        height: 40px;
+    }
+
+    table * {
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    table {
+        margin: 80px auto;
+        border: 0;
+    }
+
+    table tr th {
+        padding: 5px 20px;
+    }
+
+    #Corparation {
+        color: red;
+    }
+
+    .redText {
+        color: red;
+    }
+
+    #goldText {
+        color: gold;
+    }
+
+    table tbody {
+        border: 0;
+    }
+
+    table tbody tr:nth-child(2n + 1) {
+        background: rgb(221, 221, 221);
+    }
+
+    table tbody tr:hover {
+        background: rgba(2, 119, 253, 0.363);
+
+    }
+
+    #border {
+        border: 1px solid black;
+    }
+
+    #cursor {
+        width: 80px;
+        height: 80px;
+        background: #16000000;
+        border-radius: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(0px);
+        filter: invert(1);
+        transition: ease-in-out;
+    }
+</style>
+
+<body onmousemove="showCoords(event)">
+
+    <div id="cursor"></div>
+
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>SL</th>
+                <th>Pic</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>01</th>
+                <th>
+                    <img class="img" src="/img/RCC.png" alt="">
+                </th>
+                <th>
+                    Rajshahi City Corparation
+                </th>
+                <th>Rajshahi city Corparation</th>
+            </tr>
+            <tr>
+                <th>02</th>
+                <th>
+                    <img class="img" src="/img/RCC.png" alt="">
+                </th>
+                <th>
+                    Rajshahi City Corparation
+                </th>
+                <th>Rajshahi city <span id="Corparation">Corparation</span></th>
+            </tr>
+            <tr>
+                <th>03</th>
+                <th>
+                    <img class="img" src="/img/RCC.png" alt="">
+                </th>
+                <th>
+                    Rajshahi <span class="redText">City</span> Corparation
+                </th>
+                <th>Rajshahi city Corparation</th>
+            </tr>
+            <tr>
+                <th>04</th>
+                <th>
+                    <img class="img" src="/img/RCC.png" alt="">
+                </th>
+                <th>
+                    <span id="border">Rajshahi</span> <span class="redText">City</span> Corparation
+                </th>
+                <th>Rajshahi city <span id="goldText">Corparation</span></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const cursor = document.getElementById('cursor');
+        function showCoords(event) {
+            let x = event.clientX;
+            let y = event.clientY;
+            cursor.style.top = `${y - 80}px`
+            cursor.style.left = `${x - 40}px`
+        }
+    </script>
+
+
+</body>
+
+</html>

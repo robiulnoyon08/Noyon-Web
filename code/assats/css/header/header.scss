@@ -1,0 +1,13 @@
+$headerBg: green;
+header{
+    padding: 5px;
+    width: 100%;
+    background: rgb(52, 149, 240);
+    color: rgb(0, 255, 106);
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
