@@ -1,48 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="showup.css">
-    <link rel="stylesheet" href="Assets/font awesome/fontawesome-free-6.5.1-web/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="showup.css" />
+    <link
+      rel="stylesheet"
+      href="Assets/font awesome/fontawesome-free-6.5.1-web/css/all.min.css"/>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main">
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="109" height="32" viewBox="0 0 109 32">
-            <g fill="none" fill-rule="evenodd">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="109" height="32" viewBox="0 0 109 32">
+        <g fill="none" fill-rule="evenodd">
+            <g>
                 <g>
-                    <g>
-                        <path fill="#37B4AF" d="M63.163 7.588c3.73 0 7.99 2.74 7.99 8.577s-4.425 8.562-7.922 8.562c-2.178 0-3.959-.712-5.016-1.94V32h-4.522V7.918h4.522v1.88c1.224-1.453 3.047-2.267 4.948-2.21zM9.217 0c3.93 0 6.176 1.484 8.121 3.496l-3.803 2.87c-.92-1.471-2.558-2.338-4.293-2.274-2.145 0-3.3 1.154-3.3 2.672 0 1.558 1.645 2.247 3.706 2.94l.464.154.716.237.41.134c3.156 1.05 6.551 2.57 6.551 6.993 0 3.825-3.036 7.505-8.349 7.505-3.639.08-7.115-1.506-9.44-4.305l4.191-3.302c1.189 2.046 3.086 3.244 5.216 3.244 2.343 0 3.6-1.518 3.6-3.166 0-1.855-2.133-2.525-4.51-3.249l-.478-.145c-3.23-.97-6.83-2.245-6.83-6.861C1.189 3.069 4.555 0 9.217 0zm34.787 7.641c4.718.007 8.538 3.834 8.535 8.55-.004 4.715-3.83 8.536-8.548 8.536-2.272.004-4.451-.897-6.056-2.504-1.604-1.608-2.501-3.788-2.492-6.058.01-4.716 3.842-8.53 8.56-8.524zM23.499.33v9.4c1.115-1.367 2.79-2.155 4.556-2.142 3.88 0 6.238 2.507 6.238 6.788v10.036h-4.589v-9.435c0-2.245-1.024-3.53-3.037-3.53-1.717 0-3.139 1.188-3.139 3.961v9.004h-4.52V.33h4.491zM62.31 11.7c-2.426 0-4.225 1.982-4.225 4.421s1.78 4.456 4.225 4.456c1.182.015 2.319-.45 3.152-1.288.832-.838 1.29-1.977 1.267-3.158v-.01c.03-1.18-.426-2.322-1.261-3.157-.835-.836-1.977-1.293-3.158-1.265zm-18.318.174c-1.118.016-2.183.48-2.958 1.285-.72.749-1.133 1.735-1.165 2.767v.239c-.03 1.117.39 2.2 1.165 3.005.775.806 1.84 1.27 2.958 1.286 2.331-.043 4.19-1.96 4.157-4.291.033-2.33-1.826-4.249-4.157-4.291z" transform="translate(-130 -16) translate(130 16)"/>
-                        <path fill="#FCCD03" d="M101.015 7.566c3.728 0 7.985 2.742 7.985 8.585 0 5.843-4.412 8.57-7.907 8.57-2.182 0-3.96-.713-5.027-1.941V32h-4.509V7.896h4.509V9.78c1.225-1.456 3.048-2.27 4.95-2.213zM76.95.302V16.35c-.026 1.09.39 2.146 1.156 2.923.764.778 1.812 1.211 2.902 1.202 1.1.011 2.158-.418 2.938-1.193.781-.776 1.22-1.831 1.217-2.932V.302h4.6v15.752c0 5.755-3.708 8.667-8.726 8.667-5.018 0-8.673-2.912-8.673-8.667V.302h4.586zm23.207 11.38c-1.151.01-2.25.485-3.046 1.319-.795.834-1.22 1.954-1.176 3.106 0 2.427 1.784 4.46 4.222 4.46 1.184.019 2.324-.445 3.16-1.284.835-.839 1.294-1.982 1.271-3.166l-.01-.01c.029-1.182-.428-2.324-1.263-3.16-.836-.836-1.977-1.294-3.158-1.265z" transform="translate(-130 -16) translate(130 16)"/>
-                    </g>
+                    <path fill="#37B4AF" d="M63.163 7.588c3.73 0 7.99 2.74 7.99 8.577s-4.425 8.562-7.922 8.562c-2.178 0-3.959-.712-5.016-1.94V32h-4.522V7.918h4.522v1.88c1.224-1.453 3.047-2.267 4.948-2.21zM9.217 0c3.93 0 6.176 1.484 8.121 3.496l-3.803 2.87c-.92-1.471-2.558-2.338-4.293-2.274-2.145 0-3.3 1.154-3.3 2.672 0 1.558 1.645 2.247 3.706 2.94l.464.154.716.237.41.134c3.156 1.05 6.551 2.57 6.551 6.993 0 3.825-3.036 7.505-8.349 7.505-3.639.08-7.115-1.506-9.44-4.305l4.191-3.302c1.189 2.046 3.086 3.244 5.216 3.244 2.343 0 3.6-1.518 3.6-3.166 0-1.855-2.133-2.525-4.51-3.249l-.478-.145c-3.23-.97-6.83-2.245-6.83-6.861C1.189 3.069 4.555 0 9.217 0zm34.787 7.641c4.718.007 8.538 3.834 8.535 8.55-.004 4.715-3.83 8.536-8.548 8.536-2.272.004-4.451-.897-6.056-2.504-1.604-1.608-2.501-3.788-2.492-6.058.01-4.716 3.842-8.53 8.56-8.524zM23.499.33v9.4c1.115-1.367 2.79-2.155 4.556-2.142 3.88 0 6.238 2.507 6.238 6.788v10.036h-4.589v-9.435c0-2.245-1.024-3.53-3.037-3.53-1.717 0-3.139 1.188-3.139 3.961v9.004h-4.52V.33h4.491zM62.31 11.7c-2.426 0-4.225 1.982-4.225 4.421s1.78 4.456 4.225 4.456c1.182.015 2.319-.45 3.152-1.288.832-.838 1.29-1.977 1.267-3.158v-.01c.03-1.18-.426-2.322-1.261-3.157-.835-.836-1.977-1.293-3.158-1.265zm-18.318.174c-1.118.016-2.183.48-2.958 1.285-.72.749-1.133 1.735-1.165 2.767v.239c-.03 1.117.39 2.2 1.165 3.005.775.806 1.84 1.27 2.958 1.286 2.331-.043 4.19-1.96 4.157-4.291.033-2.33-1.826-4.249-4.157-4.291z" transform="translate(-130 -16) translate(130 16)"/>
+                    <path fill="#FCCD03" d="M101.015 7.566c3.728 0 7.985 2.742 7.985 8.585 0 5.843-4.412 8.57-7.907 8.57-2.182 0-3.96-.713-5.027-1.941V32h-4.509V7.896h4.509V9.78c1.225-1.456 3.048-2.27 4.95-2.213zM76.95.302V16.35c-.026 1.09.39 2.146 1.156 2.923.764.778 1.812 1.211 2.902 1.202 1.1.011 2.158-.418 2.938-1.193.781-.776 1.22-1.831 1.217-2.932V.302h4.6v15.752c0 5.755-3.708 8.667-8.726 8.667-5.018 0-8.673-2.912-8.673-8.667V.302h4.586zm23.207 11.38c-1.151.01-2.25.485-3.046 1.319-.795.834-1.22 1.954-1.176 3.106 0 2.427 1.784 4.46 4.222 4.46 1.184.019 2.324-.445 3.16-1.284.835-.839 1.294-1.982 1.271-3.166l-.01-.01c.029-1.182-.428-2.324-1.263-3.16-.836-.836-1.977-1.294-3.158-1.265z" transform="translate(-130 -16) translate(130 16)"/>
                 </g>
             </g>
-        </svg>
+        </g>
+    </svg>
+    </div>
+
+      <div class="navtext">
+        <div>Home</div>
+        <div>Services</div>
+        <div>Press</div>
+        <div>Careers</div>
+        <div>Blog</div>
+      </div>
+    </div>
+
+    <div class="desk">
+      <div>
+        <h1>Enable Small Business <br />Via Technology</h1>
+        <p>We help you, manage & grow <br />your business.</p>
+      </div>
+    </div>
+
+    <div class="desk2">
+      <div>
+        <img src="./mokam-logo.svg" alt="" />
+        <p>Source 10,000+ <br />product for your brretail business</p>
+      </div>
+      <div>
+        <img src="./new-redx-logo.svg" alt="" />
+        <p>Nationwide <br />fastest last-mile <br />deliveris</p>
+      </div>
+      <div>
+        <img src="./onkur logo.png" alt="" />
+        <p>Easy access to <br />financing <br />solution</p>
+      </div>
+      <div class="photo"><img src="./mainScreen__picture.jpg" alt="" /></div>
+    </div>
+
+    <div>
+      <h1>What is ShopUp?</h1>
+      <div><img src="./squigly-divider.png" alt="" /></div>
+    </div>
+    <div class="artical">
+      <div class="hcontent">
+        <h2>
+          ShopUp is Bangladesh's leading full-stack B2B commerce platform for
+          small businesses. Our goal is to use technology to supercharge
+          businesses with easy access to B2B sourcing and last-mile logistics.
+        </h2>
+      </div>
+      <div class="artical2">
+        <b>Mokam</b> - our B2B commerce platform serves small neighborhood
+        shops, providing access to a wide range of products - all available at
+        the tap of a button. <br />
+        <b>REDX</b> - our logistics service - supercharges SMEs and large
+        enterprises alike with the widest last-mile logistics network in
+        Bangladesh. <br />
+        <b>Onkur</b> - our financing platform aims to make relevant fintech
+        solutions accessible for CMSMEs and agri-businesses.
+      </div>
+    </div>
+
+    <div class="desk3">
+      <div class="product"><b>Our Products</b></div>
+      <div class="desk3cont"></div>
+    </div>
+    <div class="main2">
+      <div class="me">
+        <img
+          src="./245284969_3084875655091408_979782037143149523_n.jpg"
+          alt=""
+        />
+      </div>
+      <div class="orinimg"><img src="./Orion.png" alt="" /></div>
+      <div>
+        <h1>Mokam has changed my life</h1>
+        <p>
+          I lost my job at the start of the pandemic. My wife sold some of her
+          gold jewelries and gave me a small amount of money, I used it as
+          capital to start a small shop to sell groceries in my neighborhood. I
+          struggled a lot at first, since I didn't know where to source products
+          from, and I often would not get good deals from the suppliers. Mokam
+          changed my life with ready access to a huge category of products at
+          great prices. I can now completely focus on sales as Mokam takes care
+          of all my sourcing needs with the guarantee of fair pricing.
+        </p>
+        <p><b>Emdad Hossain,</b> Emdad General Store</p>
+        <button class="btn"><h3>Join as a retailer   ></h3></button>
+      </div>
+    </div>
+
+    <div class="desk6">
+      <div>
+        <h1>REDX saved my business</h1>
+        <p>
+          I earn my livelihood by running a small online clothing store. When
+          the lockdown started last year, all the delivery services stopped
+          their services. As a result, my business was suffering badly.
+          Thankfully I got to know about REDX - they were the only logistics
+          company supporting small businesses like mine. Their service not only
+          helped my business stay afloat through a critical period, but also
+          helped me expand the scope of my business with nationwide coverage.
+        </p>
+        <p><b>Rabeya Ahmed,</b> Beauty Blend</p>
+        <button class="btn">Join as a Retailer ></button>
+      </div>
+      <div>
+        <div class="desk6cont1">
+          <img src="./musleha-uddin-rony.png" alt="" />
+        </div>
+      </div>
+      <div>
+        <div class="desk6cont2">
+          <img src="./redx-screenshot-bd-4@3x.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="desk7">
+      <div class="desk7cont1">
+        <div><img src="./anita-das-rani.jpg" alt="" /></div>
+      </div>
+      <div class="desk7cont2">
+        <div><img src="./Orion.png" alt="" /></div>
+      </div>
+      <div style="left: 50%">
+        <h1>Onkur helped me scale up</h1>
+        <p>
+          After starting my business, one of the biggest challenges I faced was
+          scaling up sales so I could ultimately increase my profits. I realized
+          the only way to scale up would be to invest more capital into the
+          business so I could purchase more supplies, and in turn, make more
+          sales. But no financial institution was ready to provide credit to a
+          small trader like me. Onkur’s micro factoring product eliminated the
+          need for more capital by simply providing me supplies on credit. This
+          helped me significantly increase my sales and become a much more
+          profitable business.
+        </p>
+        <p><b>Anita Das Rani,</b> Purba Store</p>
+      </div>
+    </div>
+<div class="desk3">
+      <div class="product"><b>Our Apps</b></div>
+      <div class="desk3cont"></div>
+    </div>
+
+    <div class="desk8">
+      <div class="sub1">
+        <div><img src="./clay-mockup2@2x.png" alt="" /></div>
+      </div>
+
+      <div class="gplay">
+        <div><img src="./google-play-store-badge-en.svg" alt="" /></div>
+      </div>
+
+      <div class="wr1">
+        <h2 style="color: rgb(170, 158, 158)">Mokam</h2>
+        <p style="color: rgb(170, 158, 158)">
+          Order products from multiple <br />manufacturers to your doorstep!
+        </p>
+      </div>
+      <div class="desk8">
+        <div class="sub2">
+          <div class="img2"><img src="./clay-mockup3@2x.png" alt="" /></div>
         </div>
 
-        <div class="navtext">
-            <div>Home</div>
-            <div>Services</div>
-            <div>Press</div>
-            <div>Careers</div>
-            <div>Blog</div>
+        <div class="gplay">
+          <div><img src="./google-play-store-badge-en.svg" alt="" /></div>
         </div>
-    </div>
-    <div class="desk">
-        <div>
-            <h1>Enable Small Business <br>Via Technology</h1>
-            <p>We help you, manage & grow <br>your business.</p>
+
+        <div class="wr1">
+          <h2 style="color: rgb(170, 158, 158)">REDX</h2>
+          <p style="color: rgb(170, 158, 158)">
+            One-stop solution for all of your<br />business delivery problems!
+          </p>
         </div>
+      </div>
     </div>
-    <div class="desk2">
-             <div><img src="./mokam-logo.svg" alt="">
-            <p>Source 10,000+ <br>product for your brretail business</p></div>
-            <div><img src="./new-redx-logo.svg" alt="">
-            <p>Nationwide <br>fastest last-mile <br>deliveris</p></div>
-            <div><img src="./onkur logo.png" alt="">
-            <p>Easy access to <br>financing <br>solution</p></div>
-            <div class="photo"><img src="./mainScreen__picture.jpg" alt=""></div>
+
+    <div class="desk3">
+      <div class="product"><b>Tedtmonial</b></div>
+      <div class="desk3cont"></div>
     </div>
-</body>
+
+    <div class="desk9">
+      <div><img src="./sharmin-akhter-entrepreneur@3x.png" alt="" /></div>
+      <div>
+        <p>
+          <b>Sharmin says</b> “Mokam offers a huge catalogue of products at the
+          best possible prices!”
+        </p>
+      </div>
+      <div><img src="./mounota.png" alt="" /></div>
+      <div>
+        <p>
+          <b>Mounota says</b>“We are grateful for the tremendous delivery
+          support from REDX, they are a major part of our H2O family.”
+        </p>
+      </div>
+      <div><img src="./urmi.png" alt="" /></div>
+      <div>
+        <p>
+          <b>Urmi says</b>“REDX's Cash-On-Delivery services throughout the
+          country helped me expand.”
+        </p>
+      </div>
+    </div>
+
+    <div class="desk3">
+      <div class="product"><b>Press & Mrdia</b></div>
+      <div class="desk3cont"></div>
+    </div>
+
+    <div class="pressmedia">
+      <div><img src="./techcrunch-funding-news-tc-75-L.png" alt="" /></div>
+      <div><img src="./economic-times-funding-news-v3.png" alt="" /></div>
+      <div><img src="./tia-L-angled.png" alt="" /></div>
+    </div>
+
+    <div class="desk3">
+      <div class="product"><b>Life at ShopUP</b></div>
+      <div class="desk3cont"></div>
+    </div>
+
+    <div class="desk10">
+      <div class="image_galary">
+        <img src="./lifeScreen-desktop@2x.png" alt="" />
+      </div>
+      <div class="artical">
+        <p>
+          At ShopUp we dream big, grow fast, work hard, play harder, and at the
+          same time change thousands of lives for the better!
+        </p>
+        <br />
+        <p>
+          Join us to be a part of a positive force that brings change to the
+          economy of Bangladesh. Small businesses have always been the back bone
+          of our economy, and when we facilitate their growth, not only do we
+          help the micro entrepreneurs, but we ourselves grow leaps and bounds.
+        </p>
+        <button class="btn">
+          <h4>See Openings ></h4>
+        </button>
+      </div>
+    </div>
+
+    <div class="desk3">
+      <div class="product"><b>Our Blog</b></div>
+      <div class="desk3cont"></div>
+    </div>
+
+    <div class="desk11">
+      <div class="blog1">
+        <div><img src="./blog-1-anita-das-rani@3x.png" alt="" /></div>
+        <h3>
+          ShopUp's Mokam Normalizes Women-run General Stores amidst a
+          Patriarchal Society
+        </h3>
+        <p>
+          The rise in the number of Bangladeshi women engaged in different labor
+          sectors is no doubt a welcome change. According to the…
+        </p>
+      </div>
+      <div class="blog2">
+        <div><img src="./blog-2-local-retailers@3x.png" alt="" /></div>
+        <h3>Paving the way for digital transformation of local retailers</h3>
+        <p>
+          Although the COVID-19 pandemic threatened to halt the impressive
+          growth trajectory of the Bangladeshi economy, a rejuvenated retail
+          industry helped protect the momentum.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer1">
+      <div class="ftrcont1">
+        <div><h2>Our Location</h2></div>
+        <div class="ftrsub1">
+          <i class="fa-solid fa-location-dot"></i>
+          <b>Bangladesh Office</b><br />
+          4th floor, SKS Tower, Dhaka
+        </div>
+        <div class="ftrsub2">
+          <i class="fa-solid fa-location-dot"></i>
+          <b>India Office</b><br />
+          N1 Block, Embassy Manyata <br />Business Park,Thanisandra,
+          <br />Bengaluru,karnataka-560045
+        </div>
+      </div>
+      <div class="ftrcont2">
+        <h2>Our Products</h2>
+        <h4>Mokam</h4>
+        <h4>REDEX</h4>
+      </div>
+      <div class="ftrcont2">
+        <h2>Download Apps</h2>
+        <h4>Mokam</h4>
+        <h4>REDEX</h4>
+      </div>
+
+      <div class="ftrcont3">
+        <h2>Connect with Us</h2>
+        <div class="fntsub2">
+          <div>
+            <a href=""><i class="fa-solid fa-phone-volume"></i></a>
+            <button style="margin-left: 10px">01746050081</button>
+          </div>
+          <br />
+          <div>
+            <a href=""
+              ><i class="fa-solid fa-envelope-open-text"></i>
+              <button style="margin-left: 10px">
+                mdrobiulnoyon08@gmail.com
+              </button></a
+            >
+          </div>
+          <br />
+          <div>
+            <a href=""
+              ><i class="fa-brands fa-facebook"></i
+              ><button style="margin-left: 10px">Md. Robiul Noyon</button></a
+            >
+          </div>
+          <br />
+          <div>
+            <a href=""
+              ><i class="fa-brands fa-instagram"></i
+              ><button style="margin-left: 10px">Robiul Noyon</button></a
+            >
+          </div>
+          <br />
+          <div>
+            <a href=""
+              ><i class="fa-brands fa-square-youtube"></i
+              ><button style="margin-left: 10px">Rajshahi Baby Shop</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span style="padding-left: 30px"
+        ><i class="fa-regular fa-copyright"></i>2024Shopfront.Limited.</span
+      ><br />
+      <ul class="footer2">
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+        <li>Permitted Usage Policy</li>
+        <li>IPR Infringement Policy</li>
+        <li>Vulnerability Disclosure Policy</li>
+      </ul>
+    </footer>
+  </body>
 </html>

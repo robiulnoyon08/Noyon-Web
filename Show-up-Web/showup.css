@@ -1,39 +1,350 @@
-
+*{
+    padding:5px;
+}
 .main{
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-color: aqua;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .navtext{
     display: flex;
-    /* background-color: blueviolet; */
     gap: 20px;
+    align-content: space-between;
 }
 .navtext div{
     width: 20%;
-    /* border: 1px solid black; */
     border-radius: 5px;
-    align-content: space-between;
     padding: 10px;
 }
 .navtext div:hover{
-    background-color: rgb(52, 52, 228);
-    color: #ffff;
+    color: #b42f2f;
 }
 .desk{
     width: 50%;
     height: 150px;
-    background-color: aqua;
 }
 .desk2{
     width: 100%;
-    height: 200px;
-    background-color: rgb(194, 120, 31);
-    display: flex;
+    height: 300px;
+    /* background-color: rgb(194, 120, 31); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .desk2 img{
-    width: 100px;
+    width: 60%;
+    height: 50%;
+    /* gap: 40px; */
+    padding: 10px;
+}
+.desk2 .photo{
+    width: 100%;
+    height: 100%;
+}
+.photo img{
+    width: 90%;
+    height: 90%;
+}
+.artical{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: scroll
+    padding: 10px;
+}
+.artical2{
+    padding-top: 30px;
+}
+.desk3{
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(11, 95, 134); */
+    margin-top: 10px;
+}
+.desk3cont{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(7, 186, 240);
+    position: relative;
+    margin-top: 30px;
+    margin-left: 50%;
+}
+.product{
+    width: 150px;
+    height: 10px;
+    background-color: rgb(206, 186, 186);
+    /* border-radius: 10px; */
+    position: absolute;
+    margin-left: 48.7%;
+    padding-bottom: 40px;
+}
+
+
+.main2{
+    width: 100%;
+    height: 400px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main2 .me{
+    width: 200px;
+    height: 150px;
+    position: relative;
+}
+.me img{
+    width: 100%;
+    height: 150px;
+    border-radius: 45px;
+    /* position: relative; */
+}
+.main2 .orinimg {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 120px;
+}
+.main img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50px; 
+}
+.orinimg img{
+    width: 150px;
+    height: 200px;  
+}
+
+.desk4{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+.desk4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.desk5{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.desk5 img{
+    width: 250px;
+    height: 300px;
+}
+.btn{
+    background-color: yellow;
+}
+.btn:hover{
+    background-color: rgb(177, 177, 25);
+}
+.desk6{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.desk6cont1{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 75%;
+    padding: 50px;
+}
+.desk6cont1 img{
+    width: 100%;
+    height: 100%;
+}
+.desk6cont2{
+    position: relative;
+}
+.desk6cont2 img{
+    width: 200px;
+    height: 200px;
+}
+.desk7{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.desk7cont1{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 10%;
+    padding: 50px;
+}
+.desk7cont1 img{
+    width: 100%;
+    height: 100%;
+}
+.desk7cont2{
+    position: relative;
+}
+.desk7cont2 img{
+    width: 200px;
+    height: 200px;
+}
+.desk8{
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.sub1{
+    width: 300px;
+    height: 450px;
+    background-color: blue; 
+}
+.sub1 img{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    padding-left: 20px;
+}
+.gplay{
+    position: absolute;
+    padding-top: 250px;
+    padding-left: 70px;
+}
+.wr1{
+    padding-top: 300px;
+    padding-left: 70px;
+    position: absolute;
+}
+.sub2{
+    width: 300px;
+    height: 450px;
+    background-color: red;
+}
+.sub2 img{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    padding-left: 20px;
+}
+.desk03{
+    width: 100%;
     height: 50px;
+}
+.desk03cont{
+    position: relative;
+    background-color: aqua;
+}
+.product03{
+    position: absolute;
+    text-align: center;
+}
+.desk9{
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 10px;
+}
+.desk9 img{
+    width: 100%;
+    height: 100%;
+}
+.pressmedia{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(212, 197, 145);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.pressmedia img{
+    width: 100%;
+    height: 100%;
+}
+.desk10{
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.image_galary{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
+.image_galary img{
+    width: 100%;
+    height: 100%;
+}
+.desk10 .artical{
+    width: 80%;
+    height: 80%;
+    display: block;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+.desk11{
+    width: 100%;
+    height: 400px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+.blog1{
+    width: 100%;
+    height: 100%;
+}
+.blog1 img{
+    width: 90%;
+    height: 280px;
+}
+.blog2{
+    width: 100%;
+    height: 100%;
+}
+.blog2 img{
+    width: 90%;
+    height: 300px;
+}
+.footer1{
+    width: 100%;
+    height: 400px;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.ftrcont1{
+    width: 100%;
+    height: 100%;
+    /* background-color: bisque; */
+    padding: 10px;
+}
+.ftrsub1{
+    padding: 10px;
+    /* background-color: blueviolet; */
+}
+.ftrsub2{
+    padding: 10px;
+}
+.ftrcont2{
+    /* background-color: burlywood; */
+    text-align: center;
+}
+.fntsub2{
+    padding: 10px;
+    gap: 20px;
+}
+.footer2{
+    display: flex;
+    gap: 30px;
 }
